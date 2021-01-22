@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import Products from './components/Products';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+export default class App extends Component {
+  formatName(user) {
+    return user.firstName + ' ' + user.lastName;
+  }
 
-export default App;
+  render() {
+    const user = {
+      firstName: 'Mahdi',
+      lastName: 'Abdurrahman'
+    }
+    return (
+      <div className='App'>
+        <h1>react-products-app</h1>
+        <Products />
+        <h2>Hello, {this.formatName(user)}</h2>
+      </div>
+    )
+  }
+};
