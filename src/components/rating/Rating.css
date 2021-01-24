@@ -1,0 +1,13 @@
+.react-icons-star {
+   color: #517FB2;
+   font-size: 2rem;
+   transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
+   -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
+   -moz-transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
+   -ms-transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
+   -o-transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.react-icons-star:hover {
+   color: #255C99;
+   
+}
