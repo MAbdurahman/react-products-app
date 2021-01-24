@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
 import './App.css';
-import Products from './components/Products';
+import Products from './components/products/Products';
+import Rating from './components/rating/Rating';
 
 export default class App extends Component {
   formatName(user) {
@@ -21,6 +22,11 @@ export default class App extends Component {
         <Products />
         <h2>Hello, {this.formatName(user)}</h2>
         <Button variant='primary' disabled={!isValid} >Default</Button>
+        <Rating rating='1' />
+        <Rating rating='2' />
+        <Rating rating='3' />
+        <Rating rating='4' />
+        <Rating rating='5' />
       </div>
     )
   }
