@@ -7,7 +7,8 @@
    -ms-transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
    -o-transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.react-icons-star:hover {
+.react-icons-star:hover,
+.react-icons-star:active {
    color: #255C99;
    
 }
