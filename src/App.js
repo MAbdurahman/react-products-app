@@ -6,7 +6,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className='align-center'>
         <h1 className='heading'>React-Products-App</h1>
         <Products />
       </div>
