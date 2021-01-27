@@ -25,9 +25,11 @@
 }
 
 body {
+  overflow-x: hidden;
   width: 100vw;
   height: fit-content;
   margin: 0;
+  margin-bottom: 2em;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px;
   -webkit-font-smoothing: antialiased;
